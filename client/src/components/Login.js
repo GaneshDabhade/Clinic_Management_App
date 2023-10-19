@@ -2,9 +2,8 @@ import React, { useState } from 'react';
 import Paper from '@mui/material/Paper';
 import PersonIcon from '@mui/icons-material/Person';
 import axios from 'axios';
-import { Link, redirect, useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { Button,TextField, Typography } from '@mui/material';
-import Home from './Home';
 
 const LoginForm = () => {
     const navigate = useNavigate();
@@ -28,12 +27,13 @@ const LoginForm = () => {
 
     // Call Login API.
     async function login(formData){
-        const resp = await axios.post('http://localhost:5000/users/login', formData);
+        const resp = await axios.post('http://localhost:5000/login', formData);
         console.log(resp.data);
-        if(resp.Success){
-            redirect('/users/home');
+        if(resp.data.Success === true){
+            const jwt = resp.data.token;
+            localStorage.setItem("JWT", jwt);
+            navigate('/home');
         }
-        console.log("Response from server is: ", resp.message);
     };
 
 return(
