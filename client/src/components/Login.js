@@ -4,6 +4,7 @@ import PersonIcon from '@mui/icons-material/Person';
 import axios from 'axios';
 import { Link, useNavigate } from 'react-router-dom';
 import { Button,TextField, Typography } from '@mui/material';
+import '../css/Login.css';
 
 const LoginForm = () => {
     const navigate = useNavigate();
@@ -38,7 +39,7 @@ const LoginForm = () => {
 
 return(
     <>
-        <form onSubmit={handleSubmit} >
+        <form onSubmit={handleSubmit} className='LoginForm'>
         <Paper elevation={20} className='loginFormContainer'>
             <div className='loginIcon'>
                 <PersonIcon fontSize='medium' color='primary'  />
@@ -51,7 +52,7 @@ return(
             </div>
             <div className='loginRegister'>
                 <a href='/ForgetPass'><Typography variant='body2'>Forgot Password</Typography></a>
-                <label>Don't have an accout? <Link to='/users/register'>Register Now</Link> </label>
+                <label>Don't have an accout? <Link to='/register'>Register Now</Link> </label>
             </div>
         </Paper>
     </form>

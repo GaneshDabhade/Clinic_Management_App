@@ -1,46 +1,3 @@
-.App{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.loginFormContainer{
-  width: 600px;
-  padding: 30px;
-  margin: 50px;
-  display: flex;
-  flex-direction: column;
-  gap: 25px;
-  border: thick;
-}
-
-.loginFields{
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-
-.loginIcon {
-  display: flex;
-  align-items: center;
-  flex-direction: row;
-  gap: 10px;
-}
-
-.loginButton{
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-direction: row;
-  gap: 10px;
-}
-
-.loginRegister{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-
 .registerationForm{
   width: 600px;
   display: flex;
@@ -54,4 +11,9 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+}
+
+.homePage{
+  display: flex;
+  margin-top: 30px;
 }
