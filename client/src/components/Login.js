@@ -5,8 +5,11 @@ import axios from 'axios';
 import { Link, useNavigate } from 'react-router-dom';
 import { Button,TextField, Typography } from '@mui/material';
 import '../css/Login.css';
+import LoginSuccess from './Notifications/LoginSuccess';
 
 const LoginForm = () => {
+
+
     const navigate = useNavigate();
     const [formData, setFormData] = useState({
         email: '',
@@ -56,6 +59,7 @@ return(
             </div>
         </Paper>
     </form>
+    <LoginSuccess />
     </>
     )
 }
