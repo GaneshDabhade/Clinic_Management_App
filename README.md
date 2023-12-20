@@ -1,6 +1,6 @@
 ## [Clinic_Management_App](https://github.com/GaneshDabhade/Clinic_Management_App) is a Clinic Management Application.
 
-An Online Appointment Booking System for Retail Chain Clinics with both the User as well as the Admin Side.Adding a clinic bassed project.
+An Online Appointment Booking System for Retail Chain Clinics with both the User as well as the Admin Side.
 
 **Purpose**  
 
