@@ -4,7 +4,7 @@ import FirstPage from './components/FirstPage';
 import LoginForm from './components/Login';
 import RegisterForm from './components/Register';
 import ErrorPage from './components/ErrorPage';
-import Home from './components/Home';
+import Home from './components/Home/Home';
 
 function App() {
   return (
